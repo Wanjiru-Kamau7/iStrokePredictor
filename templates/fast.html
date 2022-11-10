@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link/>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Document</title>
+</head>
+
+    <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
+        <a class="navbar-brand" href="#">Signs and Symptoms</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    <div class="container-fluid">
+        <div class=" mt-5 text-center">
+            <h2 style="color: #042331;">F.A.S.T</h2>
+            <p>F.A.S.T is an easy way to detect some immediate signs and symptoms of stroke
+                and prompt immediate actions:</p>
+        </div>
+        <div class="row text-center text-light">
+            <div class="col-lg-3">
+                <div class="card shadow-lg " style="background-color:#042331;">
+                    <div class="card-body">
+                        <h4>Face drooping</h4>
+                        <img class="rounded-circle img-fluid w-75" src="{{ url_for('static',filename='images/facedrooping.jpg') }}">
+                        <p>Does one side of the face droop? You can ask the person to smile and confirm if their face is symmetrical</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card shadow-lg" style="background-color:#042331;">
+                    <div class="card-body">
+                        <h4>Arm weakness</h4>
+                         <img class="rounded-circle img-fluid w-100" src="{{ url_for('static',filename='images/armweakness.jpg') }}">
+                        <p>Is one of the arm numb or weak? You can ask the person to raise both arms and check if one of it drifts downwards</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card shadow-lg" style="background-color:#042331;">
+                    <div class="card-body">
+                        <h4>Speech difficulty</h4>
+                         <img class="rounded-circle img-fluid w-75" src="{{ url_for('static',filename='images/speechdifficulty.jpg') }}">
+                        <p>Is the person not able to speak or understand? You can ask the person to repeat a simple sentence</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card shadow-lg" style="background-color:#042331;">
+                    <div class="card-body">
+                        <h4>Time To Call</h4>
+                         <img class="rounded-circle img-fluid w-75" src="{{ url_for('static',filename='images/call.png') }}">
+                        <p>Time to call for help from the nearest hospital if any of these symptoms are observed in an individual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-4">
+            <div class="col-lg-6 text-center">
+                <img src="{{ url_for('static',filename='images/stroke.svg') }}" class="img-fluid w-75">
+            </div>
+            <div class="col-lg-5 mt-5">
+                <p class="pt-5">Although two third of cases of Stroke condition occur abruptly and without people noticing, about one third of the cases do have warning signs. Some symptoms occur at the onset of stroke and an ambulance should be called immediately. They include: Loss of strength in one part of the body, One-sided numbness, Partial loss of vision on one side, Loss of balance, Swallowing difficulties, and acute confusion. These signs may last for a few seconds.
+                </p>
+            </div>
+        </div>
+    </div>
+   <div class="footer bg-light text-center " >
+            <p class="mt-5 pt-2 pb-2">&copy; 2022 iStrokePredictor. All rights reserved.</p>
+    </div>
+
+
+</body>
+
+
+
+</html>

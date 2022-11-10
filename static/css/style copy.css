@@ -1,0 +1,316 @@
+/*home page*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    position: fixed;
+    /*background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(Neo.jpg);*/
+    background-position: center;
+    background-color:lightblue;
+    background-size: cover;
+    /*height: 100vh;*/
+    height: 65vh;
+}
+.main_bottom{
+    background-color: #042331;
+    padding-left:85px;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    width: 1400px;
+    height: 75px;
+    margin: auto;
+}
+
+.navbar header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background: #042331;
+    padding: 0px;
+    padding-top: 0px;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 60px;
+}
+
+.logo {
+    color: crimson;
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 8px;
+}
+
+.menu {
+    top: 0;
+    padding-right: 200px;
+    float: right;
+}
+
+.menu ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.menu ul li a:hover {
+    color: crimson;
+}
+
+.pop{
+    background: none!important;
+    border:none;
+    padding: 0 !important;
+    font-family: Arial;
+    color: #fff;
+    text-decoration: none;
+    cursor:pointer;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    font-size: 15px;
+}
+
+.pop:hover {
+    color: crimson;
+}
+.bottom_header{
+    background-color: #042331;
+}
+.wrapper{
+    width:1200px;
+    border:0px;
+    overflow:hidden;
+   
+}
+
+.my_content {
+    width: auto;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    left:5%;
+    float:left;
+}
+
+.my_content p {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 22px;
+    
+}
+
+.my_content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 1.2px;
+    margin-top: 9%;
+}
+
+.my_content .cn {
+    width: 160px;
+    height: 40px;
+    background: crimson;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.my_content .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    background-color: #fff;
+}
+
+.my_content span {
+    color: crimson;
+    font-size: 60px;
+}
+
+.card {
+    padding-top: 100px;
+    float: right;
+    width: 300px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+center{
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 22px;
+}
+.parent {
+    padding-right: 0;
+    display:flex;
+    position: fixed;
+    bottom:0;
+    justify-content: space-around;
+    width:100%;
+}
+.parent > div{
+    width:440px ;
+    height:220px;
+    border-radius: 8px;
+    background-color:#042331;
+    
+    border-top:2 px crimson;
+    border: none !important;
+    align-items: center;
+}
+.left{
+    float:left;
+}
+.left h1{
+    border-top: 3px solid lightblue;
+}
+.left p{
+    text-align: center;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    font-size: 17px;
+}
+.center{
+    display: inline-block;
+    margin:0 auto;
+}
+.center h1 {
+    border-top: 3px solid lightblue;
+}
+.center p {
+    text-align: center;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    font-size: 17px;
+}
+.right{
+    float: right;  
+}
+.right h1 {
+    border-top: 3px solid lightblue;
+}
+.right p {
+    text-align: center;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    font-size: 17px;
+}
+.center .cn {
+    width: 160px;
+    height: 40px;
+    background: crimson;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+.center .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.center .cn:hover {
+    background-color: #fff;
+}
+.left .cn {
+    width: 160px;
+    height: 40px;
+    background: crimson;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.left .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.left .cn:hover {
+    background-color: #fff;
+}
+.right .cn {
+    width: 160px;
+    height: 40px;
+    background: crimson;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.right .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.right .cn:hover {
+    background-color: #fff;
+}
+
+.round-image {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    display: block;
+    border-radius: 125px;
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+}

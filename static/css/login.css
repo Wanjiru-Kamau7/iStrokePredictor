@@ -1,0 +1,176 @@
+.container {
+    height: 250px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+/* Bordered form */
+form {
+    border: 1px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=email],
+input[type=password]{
+    justify-content: center;
+    width: 70%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit]{
+    background-color: crimson;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+/* Add a hover effect for buttons */
+input[type=submit] {
+    opacity: 0.8;
+}
+
+
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 400px;
+    /* Full height */
+    overflow:hidden;
+    /* Enable scroll if needed */
+    background-color: white;
+    
+    /* Black w/ opacity */
+    padding: 50px 35px;
+    /*container*/
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding-top: 2%;
+    
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 5px auto;
+    width: 100%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color:crimson;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: crimson;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.register{
+width:80%;
+padding-left:10px;
+align-items:center;
+}
+
+.register span a{
+text-decoration:none;
+color:crimson;
+}
+
+.register-form-container input[type=email], input[type=password], input[type=text]{
+    justify-content: center;
+    width: 70%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form{
+border: 1px solid #f1f1f1;
+background-color:light-blue;
+}

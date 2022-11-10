@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>My Model</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/style copy.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+    </head>
+      
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <header>
+                <div class="icon">
+                    <h2 class="logo">istrokepredictor</h2>
+                </div>
+            
+                <div class="menu">
+                    <ul>
+                        <li><button class="pop" onclick="document.getElementById('id01').style.display='block'">LOGIN</button></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        
+        <div class="wrapper">
+            <div class="my_content">
+                <h1>Let's control Stroke prevalence<br><span>istrokpredictor</span> <br></h1>
+                <p class="Par" style="color:black">Identifying stroke conditions at an early stage<br>enables the patients to seek medical attention earlier,<br>reducing the mortality rate from stroke. </p>
+            </div>
+            <div class="card">
+            </div>
+       </div>
+       <div class="main_bottom">
+             <div class="parent">
+                <div class="left">
+                    <h1></h1>
+                    <img class="round-image" src="{{ url_for('static',filename='images/fast.jpeg') }}">
+                    <p style="color:white">Early signs and symptoms<br>
+                    <button class="cn"><a href="/fast">LEARN MORE</a></button></p>
+                </div>
+                <div class="center">
+                    <h1></h1>
+                    <img class="round-image" src="{{ url_for('static',filename='images/prevent.jpeg') }}">
+                    <p style="color:white">Practice Healthy living habits <br>
+                    <button class="cn"><a href="/manage">LEARN MORE</a></button></p>
+                </div>
+            </div>
+       </div>
+
+        
+    </div> 
+        
+          
+
+       <!-- The Modal -->
+
+    <div id="id01" class="modal">
+       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="{{ url_for('login') }}" method="post">
+            Email:       <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" name="email"><br>
+            Password:<input type="password" class="form-control" id="password" name="password" placeholder="Enter password" name="pswd"><br>
+            <input type="submit" name="submit" value="login"><br><br><br>
+	    </form>
+        <div class="register">
+        <span><p class="register">Don't have an account?<a class="bottom" href="{{url_for('register')}}"> Register here</a></p></span></p>
+        </div>
+
+    </div>
+   
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+     </script>
+</body>
+</html>
